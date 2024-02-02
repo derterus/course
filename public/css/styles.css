@@ -1,0 +1,13 @@
+h1{
+    font-size: x-large;
+}
+.image{
+    width: 200px;
+    height: 200px;
+}
+td {
+    background-color: #ffffff71 !important;
+}
+tr:hover{
+    background-color: #554e4e71 !important;
+}
