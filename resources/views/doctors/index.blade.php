@@ -7,7 +7,7 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
+                
                 <th>Имя</th>
                 <th>Фамилия</th>
                 <th>Специализация</th>
@@ -22,7 +22,6 @@
         <tbody>
             @foreach ($doctors as $doctor)
             <tr>
-                <td>{{ $doctor->id }} </td>
                 <td>{{ $doctor->FirstName }} </td> 
                 <td> {{ $doctor->LastName }}</td>
                 <td>{{ $doctor->Specialization }}</td>

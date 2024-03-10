@@ -2,10 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DoctorsController;
+use App\Http\Controllers\PatientController;
 
-Route::get('/wellCUM', function () {
-    return view('welcome');
-});
 Route::get('/', function () {
     return view('home');
 });
@@ -17,3 +15,5 @@ Route::get('/contacts', function () {
 });
 
 Route::resource('doctors',DoctorsController::class);
+
+Route::resource('patient',PatientController::class);

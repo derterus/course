@@ -9,7 +9,7 @@
     <p>Email: {{ $doctor->Email }}</p>
     <p>Время работы: {{ $doctor->WorkSchedule }}</p>
     <p>Адрес: {{ $doctor->Adress }}</p>
-    <p>Фото: <img class="image" src="/{{ $doctor->Photo}}"></p>
+    <p>Фото: <img class="image" src="{{ asset($doctor->Photo)}}"></p>
     <a href="{{ route('doctors.edit', $doctor) }}" class="btn btn-warning">Редактировать</a>
     <form action="{{ route('doctors.destroy', $doctor) }}" method="POST" style="display:inline;">
         @csrf
