@@ -24,7 +24,7 @@
         </div>
         <div class="form-group">
             <label for="PhoneNumber">Номер</label>
-            <input type="number" class="form-control" id="PhoneNumber" name="PhoneNumber" value="{{ $patient->PhoneNumber }}" required>
+            <input type="text" class="form-control" id="PhoneNumber" name="PhoneNumber" value="{{$patient->PhoneNumber}}" required>
         </div>
         <div class="form-group">
             <label for="Email">Еmail</label>
